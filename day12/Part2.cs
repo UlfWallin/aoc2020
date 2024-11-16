@@ -49,13 +49,4 @@ internal static class Part2 {
     }
 
     static double DegreesToRadians(int degrees) => degrees * Math.PI / 180.0; 
-
-    static char DegreesToOrientation(int degrees) => degrees switch
-    {
-        0 => 'E',
-        90 => 'S',
-        180 => 'W',
-        270 => 'N',
-        _ => throw new ArgumentOutOfRangeException(nameof(degrees)),
-    };
 }
